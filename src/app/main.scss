@@ -22,8 +22,17 @@ body::-webkit-scrollbar-thumb {
         display: inline-block;
         margin-left: 10%;
         border-radius: 100%;
-        border: .5vw solid white;    
-        width: 40%;
+        width: 35%;
+        vertical-align: middle;
+        opacity: .7;
+        padding: .5vw;
+        transition: .5s all ease;
+
+        &.selected {
+            border: .5vw solid white;    
+            opacity: 1;
+            padding: 0;
+        }
     }
 }
 
@@ -211,6 +220,7 @@ body::-webkit-scrollbar-thumb {
         top: 4vh;
         background-color: #060606;
         padding: 1vw 2vw;
+        min-width: 32%;
     }
 
     p {
@@ -324,6 +334,7 @@ body::-webkit-scrollbar-thumb {
         top: 4vh;
         background-color: #060606;
         padding: 1vw 2vw;
+        min-width: 36%;
     }
 
     div {
@@ -896,6 +907,7 @@ body::-webkit-scrollbar-thumb {
             &--name {
                 width: 20vw;
                 font-size: 2vw;
+                top: -5vw;
             }
             &--text {
                 padding: 0;

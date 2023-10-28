@@ -12,22 +12,21 @@ This website has been created for commercial purposes,
 This website is completely responsive.
 Every version displays the needed info depending on the size.
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
+## Features
+
+- React hooks and context for Internationalization
+- CSS3 3D animations using useState and useEffect
+- Responsive design
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
+This web uses a number of open source projects to work properly:
 
-- [NextJS] - The React Framework for the Web!
+- [NextJS] - As a React framework and used for SSR
 - [CSS3] - Animations done with CSS3
+- [SASS] - The stylesheet has been made with SASS from scratch
 - [StableDiffusion] - Images created with IA.
-- [node.js] - evented I/O for the backend
+- [node.js] and [NginX] for the server
 
 
 ## Installation
@@ -39,7 +38,7 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 cd wildlandsWeb
 npm i
-npm run start
+npm run dev
 ```
 You're good to go to:
 
@@ -57,5 +56,7 @@ your preferred browser.
 
    [NextJS]: <https://nextjs.org/>
    [CSS3]: <https://developer.mozilla.org/es/docs/Web/CSS>
+   [SASS]: <https://sass-lang.com/>
    [StableDiffusion]: <https://stablediffusionweb.com/>
    [node.js]: <http://nodejs.org>
+   [NginX]: <https://www.nginx.com/>

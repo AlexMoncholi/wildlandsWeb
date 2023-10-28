@@ -3,9 +3,11 @@ import characterList from "./characterListData";
 import CharactersDetail from "./characterDetail";
 import Arrow from "./arrow";
 import Description from "./characterDescription";
+import { useLanguage } from '@/app/utils/languageUtils';
 
 function Characters() {
     const [selectedCharacter, setSelectedCharacter] = useState(2);
+    const { t } = useLanguage();
 
     const selectNextCharacter = () => {
         if (selectedCharacter + 1 < characterList.length) {
@@ -21,7 +23,7 @@ function Characters() {
 
     return (
         <div className='characters' id='characters'>
-            <h1>CONOCE A LOS SUPERVIVIENTES</h1>
+            <h1>{t('characters.title')}</h1>
             {characterList.map((character, index) => (
                 <CharactersDetail character={character} selectedCharacter={index === selectedCharacter} key={index} />
             ))}

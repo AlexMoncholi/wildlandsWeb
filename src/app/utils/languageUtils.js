@@ -1,4 +1,3 @@
-// languageUtils.js
 import { useLanguageContext } from '../context/languageContext';
 
 export function useLanguage() {

@@ -1,14 +1,13 @@
+import { useLanguage } from '@/app/utils/languageUtils';
 import enemiesList from "./enemiesListData";
 
 function Enemies(props) {
+    const { t } = useLanguage();
+
     return (
         <div className='enemies' id='enemies'>
-            <h1>+70 CARTAS DE ENEMIGOS<br />
-                17 CARTAS ENEMIGO UNICO
-            </h1>
-            <p>Durante tus viajes, encontrarás diferentes enemigos dependiendo de la localización
-                en la que te encuentres. Además, hay enemigos contra los que sólo podrás combatir
-                durante el transcurso de los capítulos, o durante las misiones secundarias.</p>
+            {t('enemies.title')}
+            <p>{t('enemies.text')}</p>
             <div className={`enemies__map ${props.displayFlyingCards ? 'animate' : ''}`}>
                 <img src={'/enemies/enemies_sauverge.png'} alt="" />
                 { enemiesList.map((enemy, index) => (
