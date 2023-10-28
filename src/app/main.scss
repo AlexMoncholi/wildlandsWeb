@@ -1,0 +1,978 @@
+@import '../styles/animations.scss';
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+.presentation {
+    width: 100%;
+    height: 90vh;
+    background-image: url('/game_background.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__designer {
+        background-color: #060606;
+        width: 15vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            width: 2vw;
+            margin-right: .5vw;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        img {
+            vertical-align: middle;
+            width: 100%;
+        }
+        p {
+            vertical-align: middle;
+            font-size: 1vw;
+            margin: 1vw .3vw;
+        }
+    }
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo_amed {
+    width: 25%;
+    margin-right: 12%;
+    img {
+        width: 70%;
+        position: relative;
+        top: 0;
+        left: 60%;
+    }
+}
+
+.logo_store {
+    width: 30%;
+    margin-left: 12%;
+    img {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 40%;
+    }
+}
+.gameInfo {
+    position: absolute;
+    bottom: -7.5%;
+    right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+
+    &__players, &__time, &__age {
+        width: 21%;
+        margin-right: 1%;
+    }
+    &__pegi {
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+.scroll {
+    position: absolute;
+    bottom: -7vh;
+    left: 45%;
+    border-radius: 100%;
+    background-color: #060606;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__icon {
+        height: 50%;
+    }
+}
+
+.intro {
+    width: 70%;
+    margin: 14vh auto;
+}
+
+.cards {
+    width: 100%;
+    height: 50vw;
+    margin-top: 17vw;
+    background-image: url('/cards_background.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    h1 {
+        background-color: #060606;
+        padding: 1vw 2vw;
+        position: absolute;
+        top: 43%;
+        left: 35%;
+    }
+
+    p {
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+        width: 60%;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    &__container {
+        width: 70%;
+        position: absolute;
+        top: -15vh;
+        left: 15%;
+
+        img {
+            margin-right: -5%;
+            width: 24%;
+            transition: margin-bottom 1s ease, opacity 1s ease;
+            opacity: 1;
+
+            &.cardhidden {
+                margin-bottom: 40vh;
+                opacity: 0;
+            }
+        }
+        &--image0 {
+            margin-bottom: -2vh;
+            transform: rotate(-15deg);
+        }
+        &--image1 {
+            margin-bottom: 2vh;
+            transform: rotate(10deg);
+        }
+        &--image2 {
+            margin-bottom: -2vh;
+            transform: rotate(0);
+        }
+        &--image3 {
+            margin-bottom: 3vh;
+            transform: rotate(-10deg);
+            transition: margin-bottom 1s ease, opacity 1s ease;
+        }
+        &--image4 {
+            transform: rotate(10deg);
+        }
+    }
+}
+
+.maps {
+    width: 100%;
+    height: 50vh;
+    margin: 4vh 0 ;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+        position: absolute;
+        left: 35%;
+        top: 4vh;
+        background-color: #060606;
+        padding: 1vw 2vw;
+    }
+
+    p {
+        position: absolute;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+        bottom: 0;
+        background-color: #060606;
+        padding: 2vh;
+    }
+
+    div {
+        display: inline-block;
+        margin-right: 1%;
+        // filter: blur(4px);
+        transition: filter .5s ease;
+        &:hover {
+            filter: none;
+        }
+    }
+
+    .map__sauverge {
+        background-image: url('/maps/sauverge_map.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 24%;
+        -webkit-transform: skew(-10deg);
+        -moz-transform: skew(-10deg);
+        -o-transform: skew(-10deg);
+        transform: skew(-10deg);
+    }
+
+    .map__sanda {
+        background-image: url('/maps/sanda_beach_map.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 24%;
+        -webkit-transform: skew(-10deg);
+        -moz-transform: skew(-10deg);
+        -o-transform: skew(-10deg);
+        transform: skew(-10deg);
+    }
+
+    .map__northmountains {
+        background-image: url('/maps/northmountain_map.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 24%;
+        -webkit-transform: skew(-10deg);
+        -moz-transform: skew(-10deg);
+        -o-transform: skew(-10deg);
+        transform: skew(-10deg);
+    }
+
+    .map__greyhills {
+        background-image: url('/maps/greyhills_city_map.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 24%;
+        -webkit-transform: skew(-10deg);
+        -moz-transform: skew(-10deg);
+        -o-transform: skew(-10deg);
+        transform: skew(-10deg);
+    }
+}
+
+.navigator {
+
+    position: absolute;
+    right: 5vw;
+    top: 110vh;
+    opacity: 1;
+    transition: opacity .5s ease;
+
+    &.moveNavigator {
+        position: fixed;
+        display:inline-block;
+        // top: 10vh;
+        margin: 0 0 0 90vw;
+        padding: 0;
+        z-index: 99;
+        opacity: 1;
+    }
+    &__circle {
+        border-radius: 100%;
+        height: 5vw;
+        width: 5vw;
+        background-color: #fff;
+    }
+}
+
+.characters {
+    height: 40vw;
+    background-image: url('/characters/characters_background.png');
+    background-size: cover;
+    background-position: top center;
+    margin-bottom: 4vh;
+    margin-top: 1vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+
+    h1 {
+        position: absolute;
+        left: 30%;
+        top: 4vh;
+        background-color: #060606;
+        padding: 1vw 2vw;
+    }
+
+    div {
+        position: absolute;
+        width: 33%;
+        height: 100%;
+        transition: all .5s ease;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            max-height: 100%;
+            display: block;
+            max-width: 100%;
+        }
+
+        .shadow {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            opacity: .6;
+            transition: all .5s ease;
+        }
+
+        &.selected {
+            transform: scale(1.2);
+            z-index: 9;
+            opacity: 1;
+
+            .shadow {
+                opacity: 0;
+            }
+    
+        }
+    }
+
+    &__kyung {
+        left: -2%;
+        z-index: 6;
+    }
+
+    &__ace {
+        left: 13%;
+        width: 35% !important;
+        z-index: 5;
+    }
+
+    &__inna {
+        left: 30%;
+        z-index: 4;
+    }
+
+    &__john {
+        left: 52%;
+        z-index: 4;
+    }
+
+    &__akil {
+        right: -8%;
+        z-index: 4;
+        width: 35% !important;
+        img {
+            right: 0;
+        }
+    }
+
+    .character__arrow {
+        border: 0.3vw solid #fff;
+        border-radius: 100%;
+        width: 7vw;
+        height: 7vw;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 11;
+
+        img {
+            width: 50%;
+            position: inherit;
+            bottom: auto;
+        }
+
+        &.disabled {
+            opacity: .1;
+        }
+
+        &.left {
+            top: calc(50% - 3.5vw);
+            left: 2vw;
+        }
+
+        &.right {
+            top: calc(50% - 3.5vw);
+            right: 2vw;
+        }
+    }
+
+    &__description {
+        left: 15%;
+        width: 70% !important;
+        height: auto !important;
+        text-align: center;
+        bottom: 2vw;
+        background-color: #fff;
+        padding: 2vh;
+        z-index: 11;
+
+        &--name {
+            width: 15vw;
+            padding: 1vw 0;
+            position: absolute;
+            background-color: #060606;
+            border: 1px solid white;
+            margin: 0;
+            color: #fff;
+            top: -3vw;
+            left: 1vw;
+            transform: rotate(-3deg);
+        }
+
+        &--text {
+            margin: 0;
+            color: #000;
+            padding: 1vh;
+        }
+    }
+
+    &__altDescription {
+        display: none;
+        width: 68% !important;
+        position: inherit;
+        margin-bottom: 3vh;
+        height: auto !important;
+        margin: 1vh 0;
+
+        &--name {
+            background-color: white;
+            border: 1px solid #000;
+            color: #060606;
+            transform: rotate(-5deg);
+            width: 40%;
+            text-align: center;
+            padding: 1vh 2vh;
+            margin-left: 30%;
+        }
+        
+        &--text {
+            width: 85%;
+            text-align: justify;
+            padding: 1vh;
+            margin: 0 auto;
+            color: #fff;
+            background-color: #060606;
+            font-size: 1.7vw !important;
+        }
+    }
+}
+
+.enemies {
+    background-image: url('/enemies/enemies_background.jpg');
+    background-size: cover;
+    position: relative;
+    perspective: 800px;
+    width: 100%;
+    z-index: 9;
+    overflow: hidden;
+    margin-bottom: 4vh;
+
+    h1 {
+        background-color: #060606;
+        padding: 1vw 2vw;
+        position: absolute;
+        top: 0;
+        right: 14%;
+        z-index: 11;
+        transform: rotate(3deg);
+    }
+    
+    p {
+        position: absolute;
+        left: 15%;
+        width: 70%;
+        text-align: center;
+        bottom: -4%;
+        background-color: #060606;
+        padding: 2vh;
+        z-index: 11;
+        font-size: 1.2vw;
+    }
+
+    &__map {
+        width: 70%;
+        position: relative;
+        bottom: 4vw;
+        left: 15%;
+        transform-style: preserve-3d;
+        transform: rotateX(30deg);
+        text-align: center;
+
+        img {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        &--card {
+            position: relative;
+            width: 15%;
+
+            .enemies__map--cardShadow {
+                position: absolute;
+                left: 1vh;
+                top: 2vh;
+                z-index: 1;
+            }
+        }
+        
+        .teacher {
+            position: absolute;
+            left: -45%;
+            top: 45%;
+            z-index: 2;
+        }
+
+        .angelsBoss {
+            position: absolute;
+            left: -50%;
+            top: 20%;
+            z-index: 2;
+        }
+
+        .nomad {
+            position: absolute;
+            left: -45%;
+            bottom: 15%;
+            z-index: 2;
+        }
+
+        .thief {
+            position: absolute;
+            left: -45%;
+            bottom: 20%;
+            z-index: 2;
+        }
+
+        &.animate {
+            .teacher {
+                animation: cardTeacher 7s infinite;
+                .enemies__map--cardShadow {
+                    animation: cardTeacherShadow 7s infinite;
+                }
+            }
+            .angelsBoss {
+                animation: cardAngels 7s infinite;
+                animation-delay: 0.5s;
+    
+                .enemies__map--cardShadow {
+                    animation: cardAngelsShadow 7s infinite;
+                    animation-delay: 0.5s;
+                }
+            }
+            .nomad {
+                animation: cardNomad 7s infinite;
+                animation-delay: 1s;
+    
+                .enemies__map--cardShadow {
+                    animation: cardNomadShadow 7s infinite;
+                    animation-delay: 1s;
+                }
+            }
+            .thief {
+                animation: cardThief 7s infinite;
+                animation-delay: 1.5s;
+    
+                .enemies__map--cardShadow {
+                    animation: cardThiefShadow 7s infinite;
+                    animation-delay: 1.5s;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2vw !important;
+        margin: 1vh;
+        text-align: center;
+    }
+    .maps, .presentation {
+        height: 30vh;
+    }
+    
+    .presentation {
+        &__designer {
+            width: 26vw;
+            top: inherit;
+            bottom: 0;
+            span {
+                width: 2vw;
+                margin-right: .7vw;
+            }
+            p {
+                font-size: .3vw;
+            }
+        }
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .intro {
+        margin: 4vh auto;
+        width: 85%;
+        p {
+            width: 100%;
+        }
+    }
+
+    .cards {
+        height: 50vw;
+        margin-top: 8vh;
+        p {
+            font-size: 2vw;
+            bottom: 4vh;
+            width: 80%;
+            left: 10%;
+        }
+        .cards__container {
+            width: 66%;
+            top: -4vh;
+            left: 17%;
+            img {
+                opacity: 1;
+                margin-bottom: 0;
+                width: 24%;
+            }
+        }
+    }
+
+    .maps {
+        margin-top: 0vh;
+        margin-bottom: 2vh;
+        height: 25vh;
+
+        h1 {
+            top: 5vh;
+        }
+        p {
+            bottom: 5vh;
+            width: 80%;
+            left: 10%;
+        }
+    }
+
+    .characters {
+        background-image: none;
+        height: fit-content;
+        margin-bottom: 1vh !important;
+
+        h1 {
+            top: 0;
+            transform: rotate(-5deg);
+        }
+        
+        &__altDescription {
+            display: inline-block;
+        }
+
+        > div {
+            background-size: cover;
+            background-position: top center;
+            display: block;
+            position: unset !important;
+            width: 95% !important;
+            margin: 1vh auto;
+            height: 14vh !important;
+            transition: none;
+
+            img {
+                position: inherit;
+                display: inline-block;
+            }
+
+            &:nth-child(odd) img {
+                float: right;
+            }
+
+            &.characters__ace img {
+                max-height: 107%;
+                margin-top: -2%;
+                margin-right: 2%;
+            }
+            .shadow {
+                display: none;
+            }
+        }
+
+        &__akil {
+            background-image: url('/characters/altBackground_akil.png');
+        }
+
+        &__inna {
+            background-image: url('/characters/altBackground_irina.png');
+        }
+
+        &__john {
+            background-image: url('/characters/altBackground_john.png');
+        }
+
+        &__ace {
+            background-image: url('/characters/altBackground_ace.png');
+        }
+
+        &__kyung {
+            background-image: url('/characters/altBackground_kyung.png');
+        }
+
+        .character__arrow {
+            display: none;
+        }
+
+        &__description {
+            display: none !important;
+        }
+
+        .selected {
+            transform: none !important;
+            z-index: 1 !important;
+            opacity: 1;
+        }
+    }
+
+    .enemies {
+        perspective: none;
+        background-image: none;
+        height: 48vw;
+
+        h1 {
+            transform: none;
+            font-size: 3.5vw;
+            top: 10%;
+            right: 9%;
+            left: auto;
+        }
+
+        p {
+            width: 75%;
+            bottom: 5%;
+            left: auto;
+            right: 5%;
+            margin: 0;
+            font-size: 1.6vw;
+            padding: 2vw;
+        }
+
+        &__map {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: auto;
+            margin-bottom: 3vh;
+            transform-style: initial;
+            transform: rotateX(0deg);
+
+            > div, img {
+                animation: none !important;
+            }
+
+            &--card {
+                width: 19%;
+            }
+
+            &--cardShadow {
+                display: none;
+            }
+
+            .teacher {
+                position: absolute;
+                right: 15%;
+                left: auto;
+                top: 33%;
+                z-index: 2;
+                transform: rotate(7deg);
+            }
+    
+            .angelsBoss {
+                position: absolute;
+                left: 28%;
+                top: 10%;
+                z-index: 2;
+                transform: rotate(6deg);
+            }
+    
+            .nomad {
+                position: absolute;
+                left: 40%;
+                bottom: 25%;
+                z-index: 2;
+                transform: rotate(-8deg);
+            }
+    
+            .thief {
+                position: absolute;
+                left: 5%;
+                bottom: 25%;
+                z-index: 2;
+                transform: rotate(-5deg);
+            }
+        }
+    }
+
+  }
+
+  /* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 900px) {
+    .scroll {
+        display: none;
+    }
+    .gameInfo {
+        width: 28%;
+        bottom: 3%;
+    }
+
+    .presentation {
+        height: 50vh;
+    }
+    
+    .intro {
+        margin: 4vh auto;
+        width: 85%;
+        p {
+            text-align: center;
+            font-size: 2vw;
+        }
+    }
+
+    .cards {
+        height: 50vw;
+        margin-top: 13vh;
+        h1 {
+            top: 28vw
+        }
+        p {
+            bottom: 0vh;
+            width: 70%;
+            left: 10%;
+        }
+        .cards__container {
+            width: 80%;
+            top: -3vh;
+            left: 10%;
+            img {
+                opacity: 1;
+                margin-bottom: 0;
+                width: 23%;
+            }
+        }
+    }
+
+    .characters {
+        margin-bottom: 2vh;
+
+        &__description {
+            &--name {
+                width: 20vw;
+                font-size: 2vw;
+            }
+            &--text {
+                padding: 0;
+            }
+        }
+        
+    }
+
+    .maps {
+        height: 30vw;
+        margin: 2vh 0 2vh;
+    }
+
+    .enemies {
+        perspective: none;
+        background-image: none;
+        height: 48vw;
+
+        h1 {
+            transform: none;
+            font-size: 3.5vw;
+            top: 10%;
+            right: 9%;
+            left: auto;
+        }
+
+        p {
+            width: 75%;
+            bottom: 5%;
+            left: auto;
+            right: 5%;
+            margin: 0;
+            font-size: 1.6vw;
+            padding: 2vw;
+        }
+
+        &__map {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: auto;
+            margin-bottom: 3vh;
+            transform-style: initial;
+            transform: rotateX(0deg);
+
+            > div, img {
+                animation: none !important;
+            }
+
+            &--card {
+                width: 19%;
+            }
+
+            &--cardShadow {
+                display: none;
+            }
+
+            .teacher {
+                position: absolute;
+                right: 15%;
+                left: auto;
+                top: 33%;
+                z-index: 2;
+                transform: rotate(7deg);
+            }
+    
+            .angelsBoss {
+                position: absolute;
+                left: 28%;
+                top: 10%;
+                z-index: 2;
+                transform: rotate(6deg);
+            }
+    
+            .nomad {
+                position: absolute;
+                left: 40%;
+                bottom: 25%;
+                z-index: 2;
+                transform: rotate(-8deg);
+            }
+    
+            .thief {
+                position: absolute;
+                left: 5%;
+                bottom: 25%;
+                z-index: 2;
+                transform: rotate(-5deg);
+            }
+        }
+    }
+}

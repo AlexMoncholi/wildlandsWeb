@@ -1,0 +1,49 @@
+
+@keyframes cardTeacher {
+    0% { left: -55%; }
+    30% { left: 62%; }
+    60% { left: 62%; }
+    100% { left: 135%; }
+}
+@keyframes cardTeacherShadow {
+    0% { left: 26%; }
+    30% { left: 0%; }
+    60% { left: 0%; }
+    100% { left: -26%; }
+}
+@keyframes cardAngels {
+    0% { left: -55%; }
+    20% { left: 32%; }
+    50% { left: 32%; }
+    100% { left: 135%; }
+}
+@keyframes cardAngelsShadow {
+    0% { left: 26%; }
+    20% { left: 0%; }
+    50% { left: 0%; }
+    100% { left: -26%; }
+}
+@keyframes cardNomad {
+    0% { left: -55%; }
+    20% { left: 35%; }
+    50% { left: 35%; }
+    100% { left: 155%; }
+}
+@keyframes cardNomadShadow {
+    0% { left: 26%; }
+    20% { left: 5%; }
+    50% { left: 5%; }
+    100% { left: -26%; }
+}
+@keyframes cardThief {
+    0% { left: -55%; }
+    20% { left: 12%; }
+    50% { left: 12%; }
+    100% { left: 135%; }
+}
+@keyframes cardThiefShadow {
+    0% { left: 26%; }
+    20% { left: 8%; }
+    50% { left: 8%; }
+    100% { left: -26%; }
+}
