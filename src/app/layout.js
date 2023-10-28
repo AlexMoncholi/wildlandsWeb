@@ -1,3 +1,4 @@
+import { LanguageProvider } from './context/languageContext';
 import { Inter } from 'next/font/google'
 import './globals.css'
 import './main.scss'
@@ -9,10 +10,16 @@ export const metadata = {
   description: 'A Deckbuilding game',
 }
 
-export default function RootLayout({ children }) {
+const Layout = ({ children }) => {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+      </body>
     </html>
   )
 }
+
+export default Layout;

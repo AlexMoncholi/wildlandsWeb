@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import Flags from "../flags/flags";
 
 function Header() {
   return (
@@ -23,6 +23,7 @@ function Header() {
         <div className='scroll'>
           <img className='scroll__icon' src={'/scroll_icon.png'} alt="Scroll down" />
         </div>
+        <Flags />
     </div>
   );
 }
