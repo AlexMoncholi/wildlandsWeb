@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
 import { useLanguage } from '@/app/utils/languageUtils';
 
 function Cards(props) {
-  const [cards, setCards] = useState({
+  const cards = {
     es: [
       '/cards/analyze_es.png',
       '/cards/hide_es.png',
@@ -10,7 +9,7 @@ function Cards(props) {
       '/cards/dodge_es.png',
       '/cards/brutality_es.png',
     ]
-  });
+  };
   const { t } = useLanguage();
 
   return (

@@ -22,11 +22,11 @@ Every version displays the needed info depending on the size.
 
 This web uses a number of open source projects to work properly:
 
-- [NextJS] - As a React framework and used for SSR
-- [CSS3] - Animations done with CSS3
-- [SASS] - The stylesheet has been made with SASS from scratch
+- [NextJS] - As a React framework.
+- [CSS3] - Animations done with CSS3.
+- [SASS] - The stylesheet has been made with SASS from scratch.
 - [StableDiffusion] - Images created with IA.
-- [node.js] and [NginX] for the server
+- [node.js] and [NginX] for the server.
 
 
 ## Installation

@@ -710,6 +710,12 @@ body::-webkit-scrollbar-thumb {
         
         &__altDescription {
             display: inline-block;
+
+            &--text {
+                font-size: 2.2vw !important;
+                margin-left: 0;
+                float: left;
+            }
         }
 
         > div {
@@ -719,12 +725,22 @@ body::-webkit-scrollbar-thumb {
             position: unset !important;
             width: 95% !important;
             margin: 1vh auto;
-            height: 14vh !important;
+            height: 20vh !important;
             transition: none;
+
+            > div {
+                float: left;
+                margin-left: -7vw;
+            }
 
             img {
                 position: inherit;
                 display: inline-block;
+                padding-top: 1vh;
+            }
+
+            &:nth-child(odd) > div {
+                margin-left: 3vw;
             }
 
             &:nth-child(odd) img {

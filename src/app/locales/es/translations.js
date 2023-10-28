@@ -1,7 +1,8 @@
 import React from "react";
+
 const translationsEs = {
     home: {
-        welcome: [<React.Fragment key={'welcomeText'}>INCLUSO HASTA EN UN APOCALIPSIS, <br />UN LOBO SIGUE SIENDO UN LOBO...</React.Fragment>],
+        welcome: [<React.Fragment key={'welcomeText'}>INCLUSO EN UN APOCALIPSIS, <br />UN LOBO SEGUIRÁ SIENDO UN LOBO...</React.Fragment>],
         intro: [<React.Fragment key={'introText'}>
             <p>
                 El mundo se ha ido al carajo... Otra vez. Esta vez no han sido los zombies,
