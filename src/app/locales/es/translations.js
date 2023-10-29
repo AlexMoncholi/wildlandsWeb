@@ -12,7 +12,7 @@ const translationsEs = {
             <p>
                 Ponte en la piel de uno de los supervivientes, con su triste historia,
                 y viaja a través del desierto, la playa, la montaña y la ciudad tóxica como tu ex,
-                para descubrir el nuevo estilo de vida mientras intentas ver un nuevo día.
+                para descubrir el nuevo estilo de vida mientras luchas por ver un nuevo día.
             </p>
             <p>
                 Historias de las Tierras Salvajes es un <b>juego de mesa digital en solitario</b>, que mezcla una
@@ -41,6 +41,11 @@ const translationsEs = {
             </h1>
         </React.Fragment>],
         text: 'Durante tus viajes, encontrarás diferentes enemigos dependiendo de la localización en la que te encuentres. Además, hay enemigos contra los que sólo podrás combatir durante el transcurso de los capítulos, o durante las misiones secundarias.'
+    },
+    ad: {
+        title: '¿Te animas a vivir el apocalipsis?',
+        ok: '¡Vamos allá!',
+        scan: 'O escanéame para ir a la store.',
     }
 };
 

@@ -40,6 +40,11 @@ const translationsEn = {
             </h1>
         </React.Fragment>],
         text: 'During your travels, you\'ll encounter various enemies depending on the location you find yourself in. Additionally, there are enemies that you can only combat during the course of the chapters or within the side missions.'
+    },
+    ad: {
+        title: 'Are you ready to experience the apocalypse?',
+        ok: 'Let\'s go!',
+        scan: 'Or scan me to go to the store.',
     }
   };
   
