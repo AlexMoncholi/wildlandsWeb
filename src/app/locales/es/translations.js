@@ -45,7 +45,15 @@ const translationsEs = {
     ad: {
         title: '¿Te animas a vivir el apocalipsis?',
         ok: '¡Vamos allá!',
-        scan: 'O escanéame para ir a la store.',
+        scan: 'O escanéame para ir al juego.',
+    },
+    menu: {
+        intro: 'Intro',
+        cards: 'Cartas',
+        characters: 'Personajes',
+        maps: 'Mapas',
+        enemies: 'Enemigos',
+        ad: 'Anuncio'
     }
 };
 

@@ -44,7 +44,15 @@ const translationsEn = {
     ad: {
         title: 'Are you ready to experience the apocalypse?',
         ok: 'Let\'s go!',
-        scan: 'Or scan me to go to the store.',
+        scan: 'Or scan me to go to the game.',
+    },
+    menu: {
+        intro: 'Intro',
+        cards: 'Cards',
+        characters: 'Characters',
+        maps: 'Maps',
+        enemies: 'Enemies',
+        ad: 'Ad'
     }
   };
   

@@ -1,16 +1,21 @@
 "use client"
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 import translationsEs from '../locales/es/translations';
 import translationsEn from '../locales/en/translations';
 
 const LanguageContext = createContext();
+
+const languageList = ['es', 'en'];
 
 export function useLanguageContext() {
   return useContext(LanguageContext);
 }
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState('es');
+  const [language, setLanguage] = useState(() => {
+    const userLanguage = navigator.language.split('-')[0];
+    return languageList.includes(userLanguage) ? userLanguage : 'en';
+  });
 
   const getTranslations = () => {
     switch (language) {
@@ -19,7 +24,7 @@ export function LanguageProvider({ children }) {
       case 'en':
         return translationsEn;
       default:
-        return translationsEs;
+        return translationsEn;
     }
   };
 
@@ -29,3 +34,4 @@ export function LanguageProvider({ children }) {
     </LanguageContext.Provider>
   );
 }
+

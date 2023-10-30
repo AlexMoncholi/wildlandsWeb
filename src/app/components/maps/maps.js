@@ -5,7 +5,7 @@ function Maps() {
   const { t } = useLanguage();
 
   return (
-    <div className='maps'>
+    <div className='maps' id='maps'>
         <div className="map__sauverge"></div>
         <div className="map__sanda"></div>
         <div className="map__northmountains"></div>

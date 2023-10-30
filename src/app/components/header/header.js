@@ -5,7 +5,7 @@ function Header() {
   const { language } = useLanguageContext();
 
   return (
-    <div className='presentation'>
+    <div className='presentation' id='header'>
         <div className='presentation__designer'>
           <span><img src={'/gears.png'} alt=''/></span>
           <p>Alejandro Moncholí</p>
