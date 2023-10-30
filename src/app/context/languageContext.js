@@ -12,10 +12,14 @@ export function useLanguageContext() {
 }
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState(() => {
+  const [language, setLanguage] = useState('en');
+
+  useEffect(() => {
     const userLanguage = window.navigator.language.split('-')[0];
-    return languageList.includes(userLanguage) ? userLanguage : 'en';
-  });
+    if (languageList.includes(userLanguage)) {
+      setLanguage(userLanguage);
+    }
+  }, []);
 
   const getTranslations = () => {
     switch (language) {
@@ -34,4 +38,3 @@ export function LanguageProvider({ children }) {
     </LanguageContext.Provider>
   );
 }
-
