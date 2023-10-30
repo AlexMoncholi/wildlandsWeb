@@ -13,7 +13,7 @@ export function useLanguageContext() {
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
-    const userLanguage = navigator.language.split('-')[0];
+    const userLanguage = window.navigator.language.split('-')[0];
     return languageList.includes(userLanguage) ? userLanguage : 'en';
   });
 

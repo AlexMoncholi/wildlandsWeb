@@ -26,6 +26,7 @@ function Navigator(props) {
           className={`navigator__circle ${(currentNavigationSection === '' && index === 0) || section === currentNavigationSection ? 'selected' : ''}`}
           key={`bubble-${index}`}
           onClick={() => { document.getElementById(section).scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }); }}>
+            <img src={`/menu/${section}.png`} alt={section} />
         </div>
       ))}
     </div>
