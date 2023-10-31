@@ -1,11 +1,13 @@
 import { useLanguageContext } from '@/app/context/languageContext';
 import Flags from "../flags/flags";
+import Fog from './fog';
 
 function Header() {
   const { language } = useLanguageContext();
 
   return (
     <div className='presentation' id='header'>
+        <Fog />
         <div className='presentation__designer'>
           <span><img src={'/gears.png'} alt=''/></span>
           <p>Alejandro Moncholí</p>

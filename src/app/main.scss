@@ -3,21 +3,22 @@
 body::-webkit-scrollbar {
     width: 1em;
 }
-   
+
 body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-   
+
 body::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
 }
 
-.flags{
+.flags {
     position: absolute;
     right: 3vw;
     top: 3vw;
     width: 15%;
+
     img {
         display: inline-block;
         margin-left: 10%;
@@ -29,7 +30,7 @@ body::-webkit-scrollbar-thumb {
         transition: .5s all ease;
 
         &.selected {
-            border: .5vw solid white;    
+            border: .5vw solid white;
             opacity: 1;
             padding: 0;
         }
@@ -62,10 +63,12 @@ body::-webkit-scrollbar-thumb {
             display: inline-block;
             vertical-align: middle;
         }
+
         img {
             vertical-align: middle;
             width: 100%;
         }
+
         p {
             vertical-align: middle;
             font-size: 1vw;
@@ -81,6 +84,7 @@ body::-webkit-scrollbar-thumb {
 .logo_amed {
     width: 25%;
     margin-right: 12%;
+
     img {
         width: 70%;
         position: relative;
@@ -92,6 +96,7 @@ body::-webkit-scrollbar-thumb {
 .logo_store {
     width: 30%;
     margin-left: 12%;
+
     img {
         width: 100%;
         position: relative;
@@ -99,6 +104,7 @@ body::-webkit-scrollbar-thumb {
         right: 40%;
     }
 }
+
 .gameInfo {
     position: absolute;
     bottom: -7.5%;
@@ -108,10 +114,13 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     width: 35vw;
 
-    &__players, &__time, &__age {
+    &__players,
+    &__time,
+    &__age {
         width: 21%;
         margin-right: 1%;
     }
+
     &__pegi {
         width: 30%;
         margin-left: 3%;
@@ -129,6 +138,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
+
     &__icon {
         height: 50%;
     }
@@ -184,23 +194,28 @@ body::-webkit-scrollbar-thumb {
                 opacity: 0;
             }
         }
+
         &--image0 {
             margin-bottom: -2vh;
             transform: rotate(-15deg);
         }
+
         &--image1 {
             margin-bottom: 2vh;
             transform: rotate(10deg);
         }
+
         &--image2 {
             margin-bottom: -2vh;
             transform: rotate(0);
         }
+
         &--image3 {
             margin-bottom: 3vh;
             transform: rotate(-10deg);
             transition: margin-bottom 1s ease, opacity 1s ease;
         }
+
         &--image4 {
             transform: rotate(10deg);
         }
@@ -210,7 +225,7 @@ body::-webkit-scrollbar-thumb {
 .maps {
     width: 100%;
     height: 50vh;
-    margin: 4vh 0 ;
+    margin: 4vh 0;
     position: relative;
     overflow: hidden;
 
@@ -238,6 +253,7 @@ body::-webkit-scrollbar-thumb {
         margin-right: 1%;
         // filter: blur(4px);
         transition: filter .5s ease;
+
         &:hover {
             filter: none;
         }
@@ -332,7 +348,7 @@ body::-webkit-scrollbar-thumb {
             width: 50%;
         }
 
-        &::before{
+        &::before {
             content: attr(data-label);
             pointer-events: none;
             border-radius: 10px;
@@ -356,6 +372,7 @@ body::-webkit-scrollbar-thumb {
 
         &:hover {
             cursor: pointer;
+
             &::before {
                 width: 13vh;
                 background-color: rgba(0, 0, 0, 0.5);
@@ -365,7 +382,7 @@ body::-webkit-scrollbar-thumb {
                 justify-content: left;
             }
         }
-        
+
         &.selected {
             background-color: #b83737;
             border: .2vw solid #fff;
@@ -427,7 +444,7 @@ body::-webkit-scrollbar-thumb {
             .shadow {
                 opacity: 0;
             }
-    
+
         }
     }
 
@@ -456,6 +473,7 @@ body::-webkit-scrollbar-thumb {
         right: -8%;
         z-index: 4;
         width: 35% !important;
+
         img {
             right: 0;
         }
@@ -541,7 +559,7 @@ body::-webkit-scrollbar-thumb {
             padding: 1vh 2vh;
             margin-left: 30%;
         }
-        
+
         &--text {
             width: 85%;
             text-align: justify;
@@ -572,7 +590,7 @@ body::-webkit-scrollbar-thumb {
         z-index: 11;
         transform: rotate(3deg);
     }
-    
+
     p {
         position: absolute;
         left: 15%;
@@ -611,7 +629,7 @@ body::-webkit-scrollbar-thumb {
                 z-index: 1;
             }
         }
-        
+
         .teacher {
             position: absolute;
             left: -45%;
@@ -643,32 +661,36 @@ body::-webkit-scrollbar-thumb {
         &.animate {
             .teacher {
                 animation: cardTeacher 7s infinite;
+
                 .enemies__map--cardShadow {
                     animation: cardTeacherShadow 7s infinite;
                 }
             }
+
             .angelsBoss {
                 animation: cardAngels 7s infinite;
                 animation-delay: 0.5s;
-    
+
                 .enemies__map--cardShadow {
                     animation: cardAngelsShadow 7s infinite;
                     animation-delay: 0.5s;
                 }
             }
+
             .nomad {
                 animation: cardNomad 7s infinite;
                 animation-delay: 1s;
-    
+
                 .enemies__map--cardShadow {
                     animation: cardNomadShadow 7s infinite;
                     animation-delay: 1s;
                 }
             }
+
             .thief {
                 animation: cardThief 7s infinite;
                 animation-delay: 1.5s;
-    
+
                 .enemies__map--cardShadow {
                     animation: cardThiefShadow 7s infinite;
                     animation-delay: 1.5s;
@@ -705,6 +727,7 @@ body::-webkit-scrollbar-thumb {
         top: 36%;
         left: 25%;
         text-align: center;
+
         p {
             padding: 4vw 8vw;
             background-image: url('/ad/text_background_red.png');
@@ -726,14 +749,73 @@ body::-webkit-scrollbar-thumb {
         top: 66%;
         left: 25%;
         text-align: center;
+
         p {
             font-size: 2vw;
         }
+
         img {
             width: 35%;
         }
     }
 }
+
+/* ---------- Fog ---------- */
+.fogwrapper {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+    filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#foglayer_01,
+#foglayer_02,
+#foglayer_03 {
+    height: 100%;
+    position: absolute;
+    width: 200%;
+}
+
+#foglayer_01 .image01,
+#foglayer_01 .image02,
+#foglayer_02 .image01,
+#foglayer_02 .image02,
+#foglayer_03 .image01,
+#foglayer_03 .image02 {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+#foglayer_01 {
+    -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+
+#foglayer_02,
+#foglayer_03 {
+    -webkit-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+}
+
+#foglayer_01 .image01,
+#foglayer_01 .image02 {
+    background: url('/fog/fog1.png') center center/cover no-repeat transparent;
+}
+
+#foglayer_02 .image01,
+#foglayer_02 .image02,
+#foglayer_03 .image01,
+#foglayer_03 .image02 {
+    background: url('/fog/fog2.png') center center/cover no-repeat transparent;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
     h1 {
@@ -745,19 +827,23 @@ body::-webkit-scrollbar-thumb {
         margin: 1vh;
         text-align: center;
     }
-    .maps, .presentation {
+
+    .maps,
+    .presentation {
         height: 30vh;
     }
-    
+
     .presentation {
         &__designer {
             width: 26vw;
             top: inherit;
             bottom: 0;
+
             span {
                 width: 2vw;
                 margin-right: .7vw;
             }
+
             p {
                 font-size: .3vw;
             }
@@ -775,6 +861,7 @@ body::-webkit-scrollbar-thumb {
     .intro {
         margin: 4vh auto;
         width: 85%;
+
         p {
             width: 100%;
             font-size: 3vw !important;
@@ -784,6 +871,7 @@ body::-webkit-scrollbar-thumb {
     .cards {
         height: 50vw;
         margin-top: 8vh;
+
         p {
             font-size: 2vw;
             bottom: 2vh;
@@ -791,10 +879,12 @@ body::-webkit-scrollbar-thumb {
             left: 10%;
             padding: 1.5vw 2vw;
         }
+
         .cards__container {
             width: 66%;
             top: -4vh;
             left: 17%;
+
             img {
                 opacity: 1;
                 margin-bottom: 0;
@@ -811,6 +901,7 @@ body::-webkit-scrollbar-thumb {
         h1 {
             top: 5vh;
         }
+
         p {
             bottom: 5vh;
             width: 80%;
@@ -829,7 +920,7 @@ body::-webkit-scrollbar-thumb {
             top: 0;
             transform: rotate(-5deg);
         }
-        
+
         &__altDescription {
             display: inline-block;
 
@@ -840,7 +931,7 @@ body::-webkit-scrollbar-thumb {
             }
         }
 
-        > div {
+        >div {
             background-size: cover;
             background-position: top center;
             display: block;
@@ -850,7 +941,7 @@ body::-webkit-scrollbar-thumb {
             height: 20vh !important;
             transition: none;
 
-            > div {
+            >div {
                 float: left;
                 margin-left: -7vw;
             }
@@ -861,7 +952,7 @@ body::-webkit-scrollbar-thumb {
                 padding-top: 1vh;
             }
 
-            &:nth-child(odd) > div {
+            &:nth-child(odd)>div {
                 margin-left: 3vw;
             }
 
@@ -874,6 +965,7 @@ body::-webkit-scrollbar-thumb {
                 margin-top: -2%;
                 margin-right: 2%;
             }
+
             .shadow {
                 display: none;
             }
@@ -947,14 +1039,15 @@ body::-webkit-scrollbar-thumb {
             transform-style: initial;
             transform: rotateX(0deg);
 
-            > div, img {
+            >div,
+            img {
                 animation: none !important;
             }
 
             &--card {
                 width: 19%;
             }
-            
+
             .teacher {
                 position: absolute;
                 right: 15%;
@@ -963,7 +1056,7 @@ body::-webkit-scrollbar-thumb {
                 z-index: 2;
                 transform: rotate(7deg);
             }
-    
+
             .angelsBoss {
                 position: absolute;
                 left: 28%;
@@ -971,7 +1064,7 @@ body::-webkit-scrollbar-thumb {
                 z-index: 2;
                 transform: rotate(6deg);
             }
-    
+
             .nomad {
                 position: absolute;
                 left: 40%;
@@ -979,7 +1072,7 @@ body::-webkit-scrollbar-thumb {
                 z-index: 2;
                 transform: rotate(-8deg);
             }
-    
+
             .thief {
                 position: absolute;
                 left: 5%;
@@ -992,28 +1085,32 @@ body::-webkit-scrollbar-thumb {
 
     .ad {
         margin-top: 4vw;
+
         h1 {
             font-size: 4vw;
             width: 75%;
             top: 8%;
             transform: rotate(-3deg);
         }
+
         &__button {
             width: 60%;
             left: 20%;
+
             p {
                 font-size: 5vw !important;
                 padding: 6vw 12vw;
             }
         }
     }
-  }
+}
 
-  /* Tablet and Smaller Desktop */
+/* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 916px) {
     .scroll {
         display: none;
     }
+
     .gameInfo {
         width: 28%;
         bottom: 3%;
@@ -1026,10 +1123,11 @@ body::-webkit-scrollbar-thumb {
     .navigator {
         display: none !important;
     }
-    
+
     .intro {
         margin: 4vh auto;
         width: 85%;
+
         p {
             text-align: center;
             font-size: 2vw;
@@ -1039,18 +1137,22 @@ body::-webkit-scrollbar-thumb {
     .cards {
         height: 50vw;
         margin-top: 13vh;
+
         h1 {
             top: 26vw
         }
+
         p {
             bottom: 0vh;
             width: 70%;
             left: 10%;
         }
+
         .cards__container {
             width: 80%;
             top: -3vh;
             left: 10%;
+
             img {
                 opacity: 1;
                 margin-bottom: 0;
@@ -1068,11 +1170,12 @@ body::-webkit-scrollbar-thumb {
                 font-size: 2vw;
                 top: -5vw;
             }
+
             &--text {
                 padding: 0;
             }
         }
-        
+
     }
 
     .maps {
@@ -1113,7 +1216,8 @@ body::-webkit-scrollbar-thumb {
             transform-style: initial;
             transform: rotateX(0deg);
 
-            > div, img {
+            >div,
+            img {
                 animation: none !important;
             }
 
@@ -1129,7 +1233,7 @@ body::-webkit-scrollbar-thumb {
                 z-index: 2;
                 transform: rotate(7deg);
             }
-    
+
             .angelsBoss {
                 position: absolute;
                 left: 28%;
@@ -1137,7 +1241,7 @@ body::-webkit-scrollbar-thumb {
                 z-index: 2;
                 transform: rotate(6deg);
             }
-    
+
             .nomad {
                 position: absolute;
                 left: 40%;
@@ -1145,7 +1249,7 @@ body::-webkit-scrollbar-thumb {
                 z-index: 2;
                 transform: rotate(-8deg);
             }
-    
+
             .thief {
                 position: absolute;
                 left: 5%;
