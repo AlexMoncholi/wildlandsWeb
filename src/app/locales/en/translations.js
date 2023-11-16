@@ -36,7 +36,7 @@ const translationsEn = {
     enemies: {
         title:[<React.Fragment key={'enemiesTitle'}>
             <h1>+70 ENEMY CARDS<br />
-                17 UNIQUE ENEMY CARDS
+                25 UNIQUE ENEMY CARDS
             </h1>
         </React.Fragment>],
         text: 'During your travels, you\'ll encounter various enemies depending on the location you find yourself in. Additionally, there are enemies that you can only combat during the course of the chapters or within the side missions.'

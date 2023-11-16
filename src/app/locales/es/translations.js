@@ -37,7 +37,7 @@ const translationsEs = {
     enemies: {
         title:[<React.Fragment key={'enemiesTitle'}>
             <h1>+70 CARTAS DE ENEMIGOS<br />
-                17 CARTAS ENEMIGO UNICO
+                25 CARTAS ENEMIGO UNICO
             </h1>
         </React.Fragment>],
         text: 'Durante tus viajes, encontrarás diferentes enemigos dependiendo de la localización en la que te encuentres. Además, hay enemigos contra los que sólo podrás combatir durante el transcurso de los capítulos, o durante las misiones secundarias.'
