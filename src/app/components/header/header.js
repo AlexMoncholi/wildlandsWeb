@@ -12,12 +12,15 @@ function Header() {
           <span><img src={'/gears.png'} alt=''/></span>
           <p>Alejandro Moncholí</p>
         </div>
+        <div className='presentation_freetoplay'>
+          <img src={`/ad/postit_free_${language}.png`} alt="Free to play" />
+        </div>
         <div className='logo_amed' >
           <img src={'/logo_amed.png'} alt="A mi estantería Digital" />
         </div>
         <img src={`/logo_${language}.png`} className={'logo'} alt="Historias de las tierras salvajes" />
         <div className='logo_store' >
-          <img src={`/prox_google_${language}.png`} alt="A mi estantería Digital" />
+          <img src={`/prox_google_${language}.png`} alt="Google Play" />
         </div>
         <div className='gameInfo'>
           <img className='gameInfo__players' src={'/game_number_players.png'} alt="1 player" />

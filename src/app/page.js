@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
 import Header from './components/header/header';
+import Footer from './components/footer/footer';
 import Intro from './components/intro/intro';
 import Cards from './components/cards/cards';
 import Maps from './components/maps/maps';
@@ -14,8 +15,9 @@ import { handleScroll } from './components/helpers/helpers';
 function Home(props) {
   const [displayCards, setDisplayCards] = useState(false);
   const [displayFlyingCards, setDisplayFlyingCards] = useState(false);
+  const [isInSection, setIsInSection] = useState(true);
 
-  const onScroll = handleScroll(setDisplayCards, setDisplayFlyingCards);
+  const onScroll = handleScroll(setDisplayCards, setDisplayFlyingCards, isInSection);
 
   useEffect(() => {
     window.addEventListener('scroll', onScroll);
@@ -23,7 +25,11 @@ function Home(props) {
     return () => {
       window.removeEventListener('scroll', onScroll);
     };
-  }, [onScroll]);
+  }, [onScroll, isInSection]);
+
+  const handleSectionChange = (section) => {
+    setIsInSection(section === 'home');
+  };
   
   return (
     <main>
@@ -35,6 +41,7 @@ function Home(props) {
       <Maps />
       <Enemies displayFlyingCards={displayFlyingCards} />
       <Ad />
+      <Footer />
     </main>
   );
 }

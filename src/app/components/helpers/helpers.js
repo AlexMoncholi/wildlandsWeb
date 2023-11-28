@@ -1,21 +1,23 @@
-export function handleScroll(setDisplayCards, setDisplayFlyingCards) {
+export function handleScroll(setDisplayCards, setDisplayFlyingCards, isInSection) {
     return () => {
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const cardsDiv = document.getElementById('cards');
-        const cardsDivPosition = cardsDiv ? cardsDiv.getBoundingClientRect() : null;
-        const flyingCardsDiv = document.getElementById('enemies');
-        const flyingCardsDivPosition = flyingCardsDiv ? flyingCardsDiv.offsetTop : null;
+        if (isInSection) {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const cardsDiv = document.getElementById('cards');
+            const cardsDivPosition = cardsDiv ? cardsDiv.getBoundingClientRect() : null;
+            const flyingCardsDiv = document.getElementById('enemies');
+            const flyingCardsDivPosition = flyingCardsDiv ? flyingCardsDiv.offsetTop : null;
 
-        if (cardsDivPosition && scrollTop >= cardsDivPosition.top) {
-            setDisplayCards(true);
-        } else {
-            setDisplayCards(false);
-        }
+            if (cardsDivPosition && scrollTop >= cardsDivPosition.top) {
+                setDisplayCards(true);
+            } else {
+                setDisplayCards(false);
+            }
 
-        if (flyingCardsDivPosition && window.scrollY + window.innerHeight >= flyingCardsDivPosition) {
-            setDisplayFlyingCards(true);
-        } else {
-            setDisplayFlyingCards(false);
+            if (flyingCardsDivPosition && window.scrollY + window.innerHeight >= flyingCardsDivPosition) {
+                setDisplayFlyingCards(true);
+            } else {
+                setDisplayFlyingCards(false);
+            }
         }
     };
 }

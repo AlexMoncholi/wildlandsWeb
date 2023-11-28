@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useLayoutEffect, useState, useRef } from 'react';
 import { handleNavigatorScroll } from '../helpers/helpers';
 import { useLanguage } from '@/app/utils/languageUtils';
 
@@ -9,13 +9,18 @@ function Navigator(props) {
   let sections = ['intro', 'cards', 'characters', 'maps', 'enemies', 'ad'];
   const { t } = useLanguage();
 
-  useEffect(() => {
-    const topHeader = document.getElementById('header').getBoundingClientRect().top;
-    const scrollHandler = handleNavigatorScroll(initialPosition, setMoveNavigator, sections, setCurrentNavigationSection);
-    window.addEventListener('scroll', scrollHandler);
-    return () => {
-      window.removeEventListener('scroll', scrollHandler);
-    };
+  useLayoutEffect(() => {
+    const headerElement = document.getElementById('header');
+
+    if (headerElement) {
+      const topHeader = headerElement.getBoundingClientRect().top;
+      const scrollHandler = handleNavigatorScroll(initialPosition, setMoveNavigator, sections, setCurrentNavigationSection);
+      window.addEventListener('scroll', scrollHandler);
+
+      return () => {
+        window.removeEventListener('scroll', scrollHandler);
+      };
+    }
   }, []);
 
   return (

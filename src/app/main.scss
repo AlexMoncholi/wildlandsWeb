@@ -13,11 +13,90 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid slategrey;
 }
 
+a {
+    color: #b83737;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/** GENERAL **/
+h2 {
+    font-size: 3vw;
+    color: #fff;
+}
+
+section {
+    width: 70%;
+    margin: 5vh auto;
+}
+
+.genericHeader {
+    width: 100%;
+    height: 20vw;
+    background-image: url('/cards_background.png');
+    background-size: cover;
+    background-position: center left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .logo_amed  {
+        width: 10%;
+        position: absolute;
+        margin: 0;
+    
+        img {
+            width: 100%;
+            left: auto;
+        }
+    }
+}
+
+footer {
+    border-top: 1px solid #322626;
+    background-color: #3b1111;
+    padding: .3vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    .footer__icons {
+        padding: 1vw;
+        width: 4.5%;
+        justify-content: right;
+        margin-right: 1vw;
+        margin-left: auto;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        margin: .5vw 1vw 1vw;
+    }
+
+    span {
+        display: inline-block;
+        font-size: 0.8vw;
+        margin-right: 2vw;
+        padding-left: .5vw;
+    }
+}
+
+/** SPECIFIC **/
+
 .flags {
     position: absolute;
     right: 3vw;
     top: 3vw;
     width: 15%;
+
+    &:hover {
+        cursor: pointer;
+    }
 
     img {
         display: inline-block;
@@ -74,6 +153,17 @@ body::-webkit-scrollbar-thumb {
             vertical-align: middle;
             font-size: 1vw;
             margin: 1vw .3vw;
+        }
+    }
+
+    &_freetoplay {
+        position: absolute;
+        bottom: -6vh;
+        left: 2vw;
+        width: 20%;
+
+        img {
+            width: 100%;
         }
     }
 }
@@ -145,7 +235,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.intro, .policies {
+.intro {
     width: 70%;
     margin: 14vh auto;
 }
@@ -760,9 +850,51 @@ body::-webkit-scrollbar-thumb {
         }
     }
 }
+.policies {
+    width: 70%;
+    margin: 6vw auto;
+    
+    h2 {
+        color: #fff;
+    }
+}
+.betatesting {
+    margin: 6vw auto;
+    width: 90%;
 
-.policies h2 {
-    color: #fff;
+    &__advertising {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        &::before {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 5vh;
+            // background-color: rgba(255, 255, 255, 0.4);
+            background: linear-gradient(rgba(133, 133, 133, 0.4), rgba(255, 255, 255, 0.4));
+            position: relative;
+            top: 1vw;
+            left: 7vw;
+            z-index: 99;
+            transform: rotate(-5deg);
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__content {
+        width: 60%;
+        margin-left: 5%;
+        display: inline-block;
+    }
+    h2 {
+        font-family: 'luckyguy';
+    }
+    p {
+        margin-right: 0;
+        text-align: justify;
+    }
 }
 
 /* ---------- Fog ---------- */
@@ -833,9 +965,36 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
     }
 
+    footer {
+        justify-content: left;
+
+        span {
+            text-align: left;
+            font-size: 3vw;
+            display: block;
+            clear: both;
+            margin: 2vw 0 2vw 2vw;
+        }
+
+            
+        .footer__icons {
+            width: 10%;
+            margin-right: 4vw;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     .maps,
     .presentation {
         height: 30vh;
+        &_freetoplay {
+            bottom: inherit;
+            top: 1vh;
+        }
+        
     }
 
     .presentation {

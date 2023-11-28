@@ -92,6 +92,37 @@ const translationsEn = {
         </p>
         </React.Fragment>]
     },
+    betatesting: {
+        text: [<React.Fragment key={'introText'}>
+        <h2>WANTED: BETA TESTERS</h2>
+        <p>
+            If you're not familiar with this free narrative deckbuilding game for mobile, you can find the description on the home page.
+        </p>
+        <p>
+            If you already know it, <b>I need your help</b>. Google has changed its policies for indie developers like me.
+            Now, <b>testers are needed</b> to ensure smooth operation.
+        </p>
+        <p>
+            The game will be free for the community (No microtransactions or anything like that), so if you help me, you'll assist a small developer in fulfilling their dream of publishing a game just to make their mark on the world.
+        </p>
+        <h2>IF YOU HELP TEST</h2>
+        <p>
+            The testing will take place over two weeks, during which you'll need to play and report any bugs you encounter.
+            The game has already been tested throughout its year of development, so you shouldn't encounter major issues.
+        </p>
+        <p>
+            Google emphasizes that it's important to note these are 14 days of testing. But don't panic, it won't be a job,
+            just a little playtime each day.
+        </p>
+        <p>
+            Once the process is complete, everyone who has helped will be credited in the Credits section and deep within
+            my geeky heart.
+        </p>
+        </React.Fragment>]
+    },
+    footer: {
+        privacy: 'Privacy'
+    }
   };
   
   export default translationsEn;

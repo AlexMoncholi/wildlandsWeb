@@ -95,6 +95,38 @@ const translationsEs = {
         </p>
         </React.Fragment>]
     },
+    betatesting: {
+        text: [<React.Fragment key={'introText'}>
+        <h2>SE BUSCAN BETA TESTERS</h2>
+        <p>
+            Si no conoces éste Deckbuilding narrativo gratuito para móviles, en el home tienes la descripción.
+        </p>
+        <p>
+            Si lo conoces, y tienes un <b>Móvil Android</b> con la versión 9 o superior (Actualizado después de Julio de 2018), <b>necesito tu ayuda</b>. Google ha cambiado sus políticas para los desarrolladores indie como yo.
+            Ahora <b>se necesitan testers</b> para certificar el buen funcionamiento.
+        </p>
+        <p>
+            El juego va a ser gratuito para la comunidad (Sin micropagos ni mierdas de esas), así que si me ayudas, ayudarás
+            a un pequeño desarrollador a cumplir su sueño de publicar un juego solo para dejar su huella en el mundo.
+        </p>
+        <h2>SI AYUDAS A TESTEAR</h2>
+        <p>
+            Las pruebas tendrán lugar durante dos semanas, en las que tendrás que ir jugando y comunicando fallos que encuentres.
+            El juego ya ha sido testeado a lo largo de su año de desarrollo, por lo que no deberías encontrar grandes fallos.
+        </p>
+        <p>
+            Google recalca que os recalque que hay que recalcar que son 14 días de testeo. Pero que no panda el cúnico, no va a
+            ser un trabajo, sólo jugar un ratito cada día.
+        </p>
+        <p>
+            Una vez terminado el proceso, todos los que hayáis ayudado tendrán el crédito en los agradecimientos y en lo más profundo
+            de mi friki corazón.
+        </p>
+        </React.Fragment>]
+    },
+    footer: {
+        privacy: 'Privacidad'
+    }
 };
 
 export default translationsEs;
