@@ -58,20 +58,37 @@ const translationsEn = {
         title: [<React.Fragment key={'welcomeText'}>PRIVACY POLICY</React.Fragment>],
         intro: [<React.Fragment key={'introText'}>
         <p>
-            The world has gone to hell... Again. This time, it wasn't the zombies, but nuclear war
-            that has decimated most of the population, leaving entire cities and areas uninhabitable.
+            Welcome to "Tales from the Wild Lands." This application is provided by A mi estantería - Digital. Your privacy is important to us, and we are committed to protecting it. This privacy policy describes how we collect, use, and share your information when you use our application.
         </p>
+
+        <h2>1. Information We Collect</h2>
         <p>
-            Put yourself in the shoes of one of the survivors, with their tragic story, and journey through
-            the desert, the beach, the mountains and the city, toxic like your ex, to discover a
-            new way of life while fighting to see a new day.
+            <b>We do not collect personally identifiable information or sensitive data</b> through the "Stories from the Wild Lands" application. We do not request or store names, email addresses, phone numbers, or any other personal information.
         </p>
+
+        <h2>2. Use of Information</h2>
         <p>
-            Tales from the Wildlands is a <b>solo digital board game</b>, that blends <b>deckbuilding
-            mechanics</b> with <b>narrative</b> by moving your
-            piece across different boards, battling enemies, and overcoming missions
-            and combats <b>throughout four episodes, or</b> try to survive as much as you can in
-            the <b>Survivor mode</b>.
+            Since we do not collect any information, <b>it is not used for personal identification or any other purpose</b>. The application is designed to function without collecting user data.
+        </p>
+
+        <h2>3. Sharing Information with Third Parties:</h2>
+        <p>
+            <b>We do not share information with third parties</b>. The information generated or entered by the user is kept private and is not shared with any external entities.
+        </p>
+
+        <h2>4. Security:</h2>
+        <p>
+            We take reasonable measures to protect the information that we do not collect. However, please note that no online security measure is entirely foolproof, and we cannot guarantee the absolute security of information.
+        </p>
+
+        <h2>5. Changes to the Privacy Policy:</h2>
+        <p>
+            We may update this privacy policy occasionally. We will notify you of any significant changes in how we handle information through a notification within the application.
+        </p>
+
+        <h2>6. Contact:</h2>
+        <p>
+            If you have questions about this privacy policy, you can contact us at monchoylasflores@gmail.com.
         </p>
         </React.Fragment>]
     },
