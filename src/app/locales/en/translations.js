@@ -44,7 +44,7 @@ const translationsEn = {
     ad: {
         title: 'Are you ready to experience the apocalypse?',
         ok: 'Let\'s go!',
-        scan: 'Or scan me to go to the game.',
+        scan: 'Scan me to go to the game.',
     },
     menu: {
         intro: 'Intro',
@@ -53,7 +53,28 @@ const translationsEn = {
         maps: 'Maps',
         enemies: 'Enemies',
         ad: 'Ad'
-    }
+    },
+    policies: {
+        title: [<React.Fragment key={'welcomeText'}>PRIVACY POLICY</React.Fragment>],
+        intro: [<React.Fragment key={'introText'}>
+        <p>
+            The world has gone to hell... Again. This time, it wasn't the zombies, but nuclear war
+            that has decimated most of the population, leaving entire cities and areas uninhabitable.
+        </p>
+        <p>
+            Put yourself in the shoes of one of the survivors, with their tragic story, and journey through
+            the desert, the beach, the mountains and the city, toxic like your ex, to discover a
+            new way of life while fighting to see a new day.
+        </p>
+        <p>
+            Tales from the Wildlands is a <b>solo digital board game</b>, that blends <b>deckbuilding
+            mechanics</b> with <b>narrative</b> by moving your
+            piece across different boards, battling enemies, and overcoming missions
+            and combats <b>throughout four episodes, or</b> try to survive as much as you can in
+            the <b>Survivor mode</b>.
+        </p>
+        </React.Fragment>]
+    },
   };
   
   export default translationsEn;

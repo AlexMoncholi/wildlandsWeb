@@ -45,7 +45,7 @@ const translationsEs = {
     ad: {
         title: '¿Te animas a vivir el apocalipsis?',
         ok: '¡Vamos allá!',
-        scan: 'O escanéame para ir al juego.',
+        scan: 'Escanéame para ir al juego.',
     },
     menu: {
         intro: 'Intro',
@@ -54,7 +54,47 @@ const translationsEs = {
         maps: 'Mapas',
         enemies: 'Enemigos',
         ad: 'Anuncio'
-    }
+    },
+    policies: {
+        title: [<React.Fragment key={'welcomeText'}>POLÍTICA DE PRIVACIDAD</React.Fragment>],
+        intro: [<React.Fragment key={'introText'}>
+        <p>
+            Bienvenido/a a "Historias de las Tierras Salvajes". Esta aplicación es proporcionada por A mi estantería - Digital. Tu privacidad es
+            importante para nosotros, y nos comprometemos a protegerla. Esta política de privacidad describe cómo recopilamos, utilizamos y
+            compartimos tu información cuando utilizas nuestra aplicación.
+        </p>
+        <h2>1. Información que recopilamos</h2>
+        <p>
+            <b>No recopilamos información personal identificable ni datos sensibles</b> a través de la aplicación "Historias de las Tierras
+            Salvajes". No solicitamos ni almacenamos nombres, direcciones de correo electrónico, números de teléfono u otra información
+            personal.
+        </p>
+        <h2>2. Uso de la información</h2>
+        <p>
+            Al no recopilar ninguna información <b>no se utiliza con fines de identificación personal ni con ningún otro propósito</b>. La
+            aplicación está diseñada para funcionar sin recopilar datos del usuario.
+        </p>
+        <h2>3. Compartir Información con Terceros:</h2>
+        <p>
+            <b>No compartimos información con terceros</b>. La información generada o ingresada por el usuario se mantiene de manera privada
+            y no se comparte con ninguna entidad externa.
+        </p>
+        <h2>4. Seguridad:</h2>
+        <p>
+            Tomamos medidas razonables para proteger la información que no recopilamos. Sin embargo, ten en cuenta que ninguna medida
+            de seguridad en línea es completamente segura, y no podemos garantizar la seguridad absoluta de la información.
+        </p>
+        <h2>5. Cambios en la Política de Privacidad:</h2>
+        <p>
+            Podemos actualizar esta política de privacidad ocasionalmente. Te notificaremos sobre cualquier cambio significativo en la forma en
+            que tratamos la información mediante una notificación dentro de la aplicación.
+        </p>
+        <h2>6. Contacto:</h2>
+        <p>
+            Si tienes preguntas sobre esta política de privacidad, puedes contactarnos en monchoylasflores@gmail.com.
+        </p>
+        </React.Fragment>]
+    },
 };
 
 export default translationsEs;

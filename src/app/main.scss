@@ -145,7 +145,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.intro {
+.intro, .policies {
     width: 70%;
     margin: 14vh auto;
 }
@@ -759,6 +759,10 @@ body::-webkit-scrollbar-thumb {
             width: 35%;
         }
     }
+}
+
+.policies h2 {
+    color: #fff;
 }
 
 /* ---------- Fog ---------- */
