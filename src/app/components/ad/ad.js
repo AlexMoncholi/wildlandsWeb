@@ -7,10 +7,10 @@ function Ad(props) {
     return (
         <div className='ad' id='ad'>
             <h1>{t('ad.title')}</h1>
-            <div className='ad__qr'>
+            {/* <div className='ad__qr'>
                 <p>{t('ad.scan')}</p>
                 <img src={'/ad/qrtest2.png'} alt='' />
-            </div>
+            </div> */}
         </div>
     );
 }
