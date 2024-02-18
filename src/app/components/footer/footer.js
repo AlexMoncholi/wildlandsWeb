@@ -12,6 +12,9 @@ const Footer = () => {
                 <span>
                     <Link href="/policies">{t('footer.privacy')}</Link>
                 </span>
+                <span>
+                    <Link href="/betatesting">{t('footer.betatesting')}</Link>
+                </span>
                 <span>2023</span>
             </p>
             <div className='footer__icons'>

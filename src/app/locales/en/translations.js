@@ -121,7 +121,8 @@ const translationsEn = {
         </React.Fragment>]
     },
     footer: {
-        privacy: 'Privacy'
+        privacy: 'Privacy',
+        betatesting: 'Betatesting'
     }
   };
   
