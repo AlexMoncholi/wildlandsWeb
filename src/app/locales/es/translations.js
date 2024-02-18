@@ -118,7 +118,7 @@ const translationsEs = {
         </p>
         <h2>PERO, ¿CÓMO AYUDAR EN ESTA NOBLE TAREA?</h2>
         <p>
-            Escríbeme un mensaje privado a mi cuenta de Instagram (<a href="https://www.instagram.com/a_mi_estanteria/">@a_mi_estanteria</a>) diciendo que te gustaría participar en la beta para tenerte en cuenta
+            Escríbeme un mensaje privado a mi cuenta de Instagram (<a href="https://www.instagram.com/a_mi_estanteria/" target="blank">@a_mi_estanteria</a>) diciendo que te gustaría participar en la beta para tenerte en cuenta
             y, <b>cuando la lista de testers esté completa</b>, comenzará el proceso: Tu cuenta de correo de gmail se incluirá en la lista de
             testers del juego en la Google Play Store para que puedas descargarte el juego de forma legal (Que no se mostrará al resto
             del público hasta pasado vuestro testeo). Lo demás... ¡Será una aventura para todos!
