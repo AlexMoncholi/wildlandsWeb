@@ -37,7 +37,7 @@ const translationsEs = {
     enemies: {
         title:[<React.Fragment key={'enemiesTitle'}>
             <h1>+70 CARTAS DE ENEMIGOS<br />
-                25 CARTAS ENEMIGO UNICO
+                31 CARTAS ENEMIGO UNICO
             </h1>
         </React.Fragment>],
         text: 'Durante tus viajes, encontrarás diferentes enemigos dependiendo de la localización en la que te encuentres. Además, hay enemigos contra los que sólo podrás combatir durante el transcurso de los capítulos, o durante las misiones secundarias.'
@@ -99,28 +99,35 @@ const translationsEs = {
         text: [<React.Fragment key={'introText'}>
         <h2>SE BUSCAN BETA TESTERS</h2>
         <p>
-            Si no conoces éste Deckbuilding narrativo gratuito para móviles, en el home tienes la descripción.
-        </p>
-        <p>
-            Si lo conoces, y tienes un <b>Móvil Android</b> con la versión 9 o superior (Actualizado después de Julio de 2018), <b>necesito tu ayuda</b>. Google ha cambiado sus políticas para los desarrolladores indie como yo.
-            Ahora <b>se necesitan testers</b> para certificar el buen funcionamiento.
+            Si tienes un <b>Móvil Android</b> con la versión 9 o superior (Actualizado después de Julio de 2018), <b>necesito tu ayuda</b>.
+            Google ha cambiado sus políticas para los desarrolladores indie. Ahora <b>se necesitan un mínimo de 20 testers voluntarios</b> para
+            certificar el buen funcionamiento y que su tienda no se llene de aplicaciones basurilla.
         </p>
         <p>
             El juego va a ser gratuito para la comunidad (Sin micropagos ni mierdas de esas), así que si me ayudas, ayudarás
-            a un pequeño desarrollador a cumplir su sueño de publicar un juego solo para dejar su huella en el mundo.
+            a un pequeño desarrollador a cumplir su sueño de publicar su primer juego solo para dejar su huella en el mundo.
         </p>
         <h2>SI AYUDAS A TESTEAR</h2>
         <p>
-            Las pruebas tendrán lugar durante dos semanas, en las que tendrás que ir jugando y comunicando fallos que encuentres.
+            Las pruebas tendrán lugar <b>durante dos semanas</b>, en las que <b>tendrás que ir jugando y comunicando fallos</b> que encuentres.
             El juego ya ha sido testeado a lo largo de su año de desarrollo, por lo que no deberías encontrar grandes fallos.
         </p>
         <p>
-            Google recalca que os recalque que hay que recalcar que son 14 días de testeo. Pero que no panda el cúnico, no va a
-            ser un trabajo, sólo jugar un ratito cada día.
+            Una vez terminado el proceso, <b>todos los que hayáis ayudado tendréis el crédito en</b> los agradecimientos del <b>libro de arte</b> del
+            juego (Que también será gratis), en la <b>sección agradecimientos</b> del juego <b>y en lo más profundo de mi friki corazón</b>.
+        </p>
+        <h2>PERO, ¿CÓMO AYUDAR EN ESTA NOBLE TAREA?</h2>
+        <p>
+            Escríbeme un mensaje privado a mi cuenta de Instagram (<a href="https://www.instagram.com/a_mi_estanteria/">@a_mi_estanteria</a>) diciendo que te gustaría participar en la beta para tenerte en cuenta
+            y, <b>cuando la lista de testers esté completa</b>, comenzará el proceso: Tu cuenta de correo de gmail se incluirá en la lista de
+            testers del juego en la Google Play Store para que puedas descargarte el juego de forma legal (Que no se mostrará al resto
+            del público hasta pasado vuestro testeo). Lo demás... ¡Será una aventura para todos!
         </p>
         <p>
-            Una vez terminado el proceso, todos los que hayáis ayudado tendrán el crédito en los agradecimientos y en lo más profundo
-            de mi friki corazón.
+            Como soy un paranoico de la seguridad, no os preocupéis, sólo pediré la cuenta de email cuando tenga la lista de testers completa.
+        </p>
+        <p>
+            Si has llegado hasta aquí, participes o no, ¡Muchísimas gracias por dedicarme un ratito de tu tiempo!. ¡Nos vemos en las Tierras Salvajes!
         </p>
         </React.Fragment>]
     },

@@ -13,7 +13,6 @@ function Navigator(props) {
     const headerElement = document.getElementById('header');
 
     if (headerElement) {
-      const topHeader = headerElement.getBoundingClientRect().top;
       const scrollHandler = handleNavigatorScroll(initialPosition, setMoveNavigator, sections, setCurrentNavigationSection);
       window.addEventListener('scroll', scrollHandler);
 
