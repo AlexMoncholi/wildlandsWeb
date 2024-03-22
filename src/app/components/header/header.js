@@ -20,7 +20,9 @@ function Header() {
         </div>
         <img src={`/logo_${language}.png`} className={'logo'} alt="Historias de las tierras salvajes" />
         <div className='logo_store' >
-          <img src={`/prox_google_${language}.png`} alt="Google Play" />
+          <a href='https://play.google.com/store/apps/details?id=io.ionic.historiasDeLasTierrasSalvajes&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target='_blank'>
+            <img src={`/prox_google_${language}.png`} alt="Google Play" />
+          </a>
         </div>
         <div className='gameInfo'>
           <img className='gameInfo__players' src={'/game_number_players.png'} alt="1 player" />
